@@ -19,3 +19,11 @@ Rodar os testes:
 ```bash
 pytest ../tests/
 ```
+Rodar o codigo normal:
+```bash
+python main.py
+```
+Como gerar os relatorios:
+```bash
+python -m pytest --cov=./ --cov-report=xml:"coverage.xml" ../tests
+```
