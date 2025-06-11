@@ -1,0 +1,30 @@
+[run]
+source = .
+omit =
+    */test/*
+    */unitTests/*
+    */deploy/*
+    */env/*
+    */img/*
+    .gcloudignore
+    .gitignore
+    README.md
+    requirements.txt
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    pass
+    raise ImportError
+    @abstractmethod
+    @property
+    @staticmethod
+    @classmethod
+
+ignore_errors = True
+precision = 2
+show_missing = True
+skip_covered = True
